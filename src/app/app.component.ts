@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {API_ENDPOINT} from "./app.settings";
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-  title = 'rat.app.web';
+
+  public title: string = 'rat';
+
+  constructor() { }
+
+  ngOnInit() {
+    this.title = API_ENDPOINT;
+    console.log(this.title);
+  }
 }

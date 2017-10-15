@@ -19,9 +19,13 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.less"
+        "styles.less",
+        "legacy/css/bootstrap.min.css",
+        "legacy/css/style.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "legacy/js/bootstrap.min.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
